@@ -1,0 +1,140 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
+header {
+    background: rgba(28, 28, 28, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+.welcome {
+    background: linear-gradient(135deg, #4A90E2, #50E3C2);
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: 80px; 
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.welcome h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+section.content {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease-out;
+    margin: 50px 20px;
+    padding: 60px;
+    background-color: #333;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+section.content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#about {
+    background: linear-gradient(135deg, #536DFE, #304FFE); 
+}
+
+section#services {
+    background: linear-gradient(135deg, #00BFA5, #00796B);
+}
+
+section#how {
+    background: linear-gradient(135deg, #29B6F6, #0288D1); 
+}
+
+section#location {
+    background: linear-gradient(135deg, #7E57C2, #5E35B1); 
+}
+
+section.contact {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.contact h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section.contact p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+a {
+    color: #50E3C2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
