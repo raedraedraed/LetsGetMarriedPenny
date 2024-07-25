@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFICIALLY MARRIED!!!</title>
+    <link rel="stylesheet" href="././styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2e2e2e; /* Dark background color */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        .container {
+            text-align: center;
+            background-color: #333; /* Darker background color for container */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 2px solid #ffb6c1;
+        }
+
+        h1 {
+            color: #ff69b4;
+            margin-bottom: 20px;
+            font-family: 'Great Vibes', cursive; /* Romantic font */
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Place canvas behind other content */
+        }
+
+        #countdown {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        #popupMessage {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #2c2c2c;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 24px;
+            animation: moveSlowly 10s linear infinite;
+        }
+
+        @keyframes moveSlowly {
+            0% { transform: translate(-50%, -50%); }
+            50% { transform: translate(-45%, -45%); }
+            100% { transform: translate(-50%, -50%); }
+        }
+        @media (max-width: 768px){
+            .container{
+                height: 400px;
+                width: 250px;
+            }
+
+            .happypenny{
+                position: relative;
+                top: -40px;
+                height: 280px;
+                width: 230px;
+            }
+            
+            .countdown{
+                position: relative;
+                top: 90px;
+            }
+
+            .popmes{
+                width: 200px;
+            }
+        }
+
+        * {
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none; /* For modern browsers */
+            -webkit-user-select: none; /* For Safari */
+            -ms-user-select: none; /* For IE/Edge */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You  are  my  wife  forever  now  Penny!!!</h1>
+        <img src="././happy-penny-cat.gif" alt="Dancing Cat" class="happypenny" id="catGif">
+    </div>
+
+    <!-- Countdown Timer -->
+    <div id="countdown" class="countdown">10</div>
+
+    <!-- HTML5 Canvas for Raining Flowers -->
+    <canvas id="flowersCanvas"></canvas>
+
+    <!-- Popup Message -->
+    <div id="popupMessage" class="popmes">
+        <h2>Dear wifey Penny!</h2>
+        <p>since now you are stuck with me forever, your whole life.</p> <br>
+        <p>your hubby Raed wants you to be his princess for at least "eternity"</p>
+    </div>
+
+    <script src="././yay.js"></script>
+</body>
+</html>
